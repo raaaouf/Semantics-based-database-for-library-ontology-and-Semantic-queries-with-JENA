@@ -20,7 +20,7 @@ The Web Ontology Language is a family of knowledge representation languages for 
 
 
 ## Libraries Require
-* JENA
+* JENA (jar available with java project)
 ## Tools Required
 * Altova SemanticWorks or any other OWL editor 
 * Java IDE 
