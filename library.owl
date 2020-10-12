@@ -1,0 +1,879 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/raouf/ontologies/2020/1/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/raouf/ontologies/2020/1/untitled-ontology-6"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Semantic_Degital_Library_system-ontology="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#domain -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#domain"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#minCardinality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#minCardinality"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- nonNegativeInteger -->
+
+    <rdfs:Datatype rdf:about="nonNegativeInteger"/>
+    
+
+
+    <!-- http://www.semanticweb.org/raouf/ontologies/2020/1/nonNegativeInteger -->
+
+    <rdfs:Datatype rdf:about="http://www.semanticweb.org/raouf/ontologies/2020/1/nonNegativeInteger"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#ConsultedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#ConsultedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Order"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Books"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Digital_Collections"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Person"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Order"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Enroll -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Enroll">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#ConsultedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Membre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#AudioDocument"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#MOC"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#YoutubeVideo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Order -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Order">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Membre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Books"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Digital_Collections"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Participate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Participate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Membre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Events"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#SubscribeTO -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#SubscribeTO">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#chapter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#chapter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Article"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Book"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Magazine"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Thesis"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#journal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/raouf/ontologies/2020/1/hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/raouf/ontologies/2020/1/hasPart">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#MultiVolumeBook"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Magazine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#journal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Membre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Library"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Author -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Author">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Article"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Books"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#EBook"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Thesis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Bookformat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Bookformat">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#AudioDocument"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Book"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#EBook"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#MultiVolumeBook"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Cover -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Cover">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Books"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Date">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Events"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Description">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Books"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Digital_Collections"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Events"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Duration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#AudioVisualDocument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Field -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Field">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Books"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Digital_Collections"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Events"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#GuestList -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#GuestList">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Events"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Reference -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Reference">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Books"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#SameAs -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#SameAs">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Subscribtion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Subscribtion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Membre"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Teacher -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Teacher">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#AudioVisualDocument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Title">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Books"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Digital_Collections"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Events"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Tutor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Tutor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Conference"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#WorkShop"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#chapter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#chapter">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#end_of_subscribtion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#end_of_subscribtion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Membre"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#link -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#link">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Events"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Film"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#MOC"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#YoutubeVideo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Membre"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#rate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#rate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#AudioVisualDocument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Article -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Article">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Digital_Collections"/>
+        <rdfs:comment xml:lang="en">A written composition in prose, usually nonfiction, on a specific topic, forming an independent part of a book or other publication, as a newspaper or magazine.</rdfs:comment>
+        <rdfs:label xml:lang="en">Article</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#AudioDocument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#AudioDocument">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Digital_Collections"/>
+        <rdfs:comment xml:lang="en">An audio document; aka record.</rdfs:comment>
+        <rdfs:label xml:lang="en">audio document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#AudioVisualDocument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#AudioVisualDocument">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Digital_Collections"/>
+        <rdfs:comment xml:lang="en">An audio-visual document; film, video, and so forth.</rdfs:comment>
+        <rdfs:label xml:lang="en">audio-visual document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Book -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Book">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Books"/>
+        <rdfs:label xml:lang="en"> Book</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Books -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Books"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Conference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Conference">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Events"/>
+        <rdfs:comment xml:lang="en">A meeting for consultation or discussion.</rdfs:comment>
+        <rdfs:label xml:lang="en">Conference</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Digital_Collections -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Digital_Collections"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#EBook -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#EBook">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Digital_Collections"/>
+        <rdfs:comment xml:lang="en">A written composition in prose, usually nonfiction, on a specific topic, forming an independent part of a book or other publication, as a newspaper or magazine.</rdfs:comment>
+        <rdfs:label xml:lang="en">Ebook</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Events -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Events">
+        <rdfs:comment xml:lang="en">A meeting : confirence ...</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Exhibitions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Exhibitions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Events"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Film -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Film">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#AudioVisualDocument"/>
+        <rdfs:comment xml:lang="en">aka movie.</rdfs:comment>
+        <rdfs:label xml:lang="en">Film</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Library -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Library">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Books"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Digital_Collections"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Events"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#MOC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#MOC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#AudioVisualDocument"/>
+        <rdfs:comment xml:lang="en">complete and guided course .</rdfs:comment>
+        <rdfs:label xml:lang="en">MOC</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Magazine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Magazine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Books"/>
+        <rdfs:comment xml:lang="en">A periodical of magazine Articles. A magazine is a publication that is issued periodically, usually bound in a paper cover, and typically contains essays, stories, poems, etc., by many writers, and often photographs and drawings, frequently specializing in a particular subject or area, as hobbies, news, or sports.</rdfs:comment>
+        <rdfs:label xml:lang="en">Magazine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Manual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Manual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Books"/>
+        <rdfs:comment xml:lang="en">A small reference book, especially one giving instructions.</rdfs:comment>
+        <rdfs:label xml:lang="en">Manual</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Membre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Membre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Participate"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Events"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#MultiVolumeBook -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#MultiVolumeBook">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Books"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/raouf/ontologies/2020/1/hasPart"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Article"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/raouf/ontologies/2020/1/hasPart"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Book"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A loose, thematic, collection of Documents, often Books.</rdfs:comment>
+        <rdfs:label xml:lang="en">Multivolume Book</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Slide_Show -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Slide_Show">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Digital_Collections"/>
+        <rdfs:comment xml:lang="en">A presentation of a series of slides obout project, course...</rdfs:comment>
+        <rdfs:label xml:lang="en">Slides</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Thesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Thesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Digital_Collections"/>
+        <rdfs:comment xml:lang="en">A document created to summarize research findings associated with the completion of an academic degree.</rdfs:comment>
+        <rdfs:label xml:lang="en">Thesis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Website -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Website">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Digital_Collections"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/raouf/ontologies/2020/1/hasPart"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/raouf/ontologies/2020/1/Webpage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A group of Webpages accessible on the Web.</rdfs:comment>
+        <rdfs:label xml:lang="en">Website</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#WorkShop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#WorkShop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Events"/>
+        <rdfs:comment xml:lang="en">A Study meeting  ...</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#YoutubeVideo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#YoutubeVideo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#AudioVisualDocument"/>
+        <rdfs:label xml:lang="en">Youtube Video</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#journal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#journal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Books"/>
+        <rdfs:label xml:lang="en"> journal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/raouf/ontologies/2020/1/Webpage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/raouf/ontologies/2020/1/Webpage"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Course1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Course1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#MOC"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#YoutubeVideo"/>
+        <Semantic_Degital_Library_system-ontology:Duration xml:lang="en">5 hours</Semantic_Degital_Library_system-ontology:Duration>
+        <Semantic_Degital_Library_system-ontology:Field xml:lang="en">general pyschology</Semantic_Degital_Library_system-ontology:Field>
+        <Semantic_Degital_Library_system-ontology:Teacher xml:lang="en">Robert Johnson</Semantic_Degital_Library_system-ontology:Teacher>
+        <Semantic_Degital_Library_system-ontology:Title xml:lang="en">master general pyschology and get your certificat</Semantic_Degital_Library_system-ontology:Title>
+        <Semantic_Degital_Library_system-ontology:link xml:lang="en">www.youtube.com/#video1</Semantic_Degital_Library_system-ontology:link>
+        <Semantic_Degital_Library_system-ontology:rate xml:lang="en">5 stars</Semantic_Degital_Library_system-ontology:rate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Degital_Encyclopedia_of_Psychology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Degital_Encyclopedia_of_Psychology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Library"/>
+        <Semantic_Degital_Library_system-ontology:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Degital Encyclopedia of Psychology</Semantic_Degital_Library_system-ontology:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Raouf_zoghbi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Raouf_zoghbi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Membre"/>
+        <Semantic_Degital_Library_system-ontology:Enroll rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Course1"/>
+        <Semantic_Degital_Library_system-ontology:Order rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#book002"/>
+        <Semantic_Degital_Library_system-ontology:Order rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#book003"/>
+        <Semantic_Degital_Library_system-ontology:SubscribeTO rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Degital_Encyclopedia_of_Psychology"/>
+        <Semantic_Degital_Library_system-ontology:Subscribtion>monthly</Semantic_Degital_Library_system-ontology:Subscribtion>
+        <Semantic_Degital_Library_system-ontology:end_of_subscribtion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-04-01</Semantic_Degital_Library_system-ontology:end_of_subscribtion>
+        <Semantic_Degital_Library_system-ontology:name>Raouf Zoghbi</Semantic_Degital_Library_system-ontology:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#book001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#book001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#AudioDocument"/>
+        <Semantic_Degital_Library_system-ontology:Bookformat>audio document</Semantic_Degital_Library_system-ontology:Bookformat>
+        <Semantic_Degital_Library_system-ontology:Title>the art of psychology</Semantic_Degital_Library_system-ontology:Title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#book002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#book002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#AudioDocument"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Book"/>
+        <Semantic_Degital_Library_system-ontology:ConsultedBy rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Raouf_zoghbi"/>
+        <Semantic_Degital_Library_system-ontology:Author xml:lang="en">Viktor E. Frankl</Semantic_Degital_Library_system-ontology:Author>
+        <Semantic_Degital_Library_system-ontology:Bookformat>Book , audio document</Semantic_Degital_Library_system-ontology:Bookformat>
+        <Semantic_Degital_Library_system-ontology:Cover xml:lang="en">#cover2</Semantic_Degital_Library_system-ontology:Cover>
+        <Semantic_Degital_Library_system-ontology:Description xml:lang="en">I can’t imagine a list of the best psychology books not including Frankl’s classic. I first read Man’s Search for Meaning in my early 20s. But it didn’t mean anything to me until rereading it in my mid-30s. Frankl’s observations as a captive in a Nazi concentration camp during World War II are instructive for every human being. All readers will gain a new perspective on their lives and what drives them after reading this book.</Semantic_Degital_Library_system-ontology:Description>
+        <Semantic_Degital_Library_system-ontology:Field xml:lang="en">Developmental or ego psychology</Semantic_Degital_Library_system-ontology:Field>
+        <Semantic_Degital_Library_system-ontology:Reference xml:lang="en">002</Semantic_Degital_Library_system-ontology:Reference>
+        <Semantic_Degital_Library_system-ontology:Title xml:lang="en">Man s Search for Meaning</Semantic_Degital_Library_system-ontology:Title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#book003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#book003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#EBook"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#MultiVolumeBook"/>
+        <Semantic_Degital_Library_system-ontology:ConsultedBy rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Raouf_zoghbi"/>
+        <Semantic_Degital_Library_system-ontology:ConsultedBy rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#visitor"/>
+        <Semantic_Degital_Library_system-ontology:Author>Robert Johnson</Semantic_Degital_Library_system-ontology:Author>
+        <Semantic_Degital_Library_system-ontology:Bookformat>book  , audio document  , multivolume book</Semantic_Degital_Library_system-ontology:Bookformat>
+        <Semantic_Degital_Library_system-ontology:Bookformat>multivolume book</Semantic_Degital_Library_system-ontology:Bookformat>
+        <Semantic_Degital_Library_system-ontology:Cover xml:lang="en">#cover3</Semantic_Degital_Library_system-ontology:Cover>
+        <Semantic_Degital_Library_system-ontology:Description xml:lang="en">I based my guide on psychological projection on this little book about how we tend to project the best parts of ourselves onto others. This process occurs unconsciously, so we need to become aware of what we’re doing first before we can take back our projections and own our true power. Inner Gold will show you the way.</Semantic_Degital_Library_system-ontology:Description>
+        <Semantic_Degital_Library_system-ontology:Field xml:lang="en">Humanistic psychology</Semantic_Degital_Library_system-ontology:Field>
+        <Semantic_Degital_Library_system-ontology:Reference xml:lang="en">003</Semantic_Degital_Library_system-ontology:Reference>
+        <Semantic_Degital_Library_system-ontology:Title xml:lang="en">Inner Gold:  Psychological Projection -Collection</Semantic_Degital_Library_system-ontology:Title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#conf1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#conf1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Conference"/>
+        <Semantic_Degital_Library_system-ontology:Date xml:lang="en">2020-03-04T00:00:00Z</Semantic_Degital_Library_system-ontology:Date>
+        <Semantic_Degital_Library_system-ontology:GuestList>peter parker</Semantic_Degital_Library_system-ontology:GuestList>
+        <Semantic_Degital_Library_system-ontology:Title>Analysing the - She: Understanding Feminine Psychology- book</Semantic_Degital_Library_system-ontology:Title>
+        <Semantic_Degital_Library_system-ontology:Tutor>Robert Johnson</Semantic_Degital_Library_system-ontology:Tutor>
+        <Semantic_Degital_Library_system-ontology:Tutor>doctor who</Semantic_Degital_Library_system-ontology:Tutor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#course2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#course2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Film"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#MOC"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#YoutubeVideo"/>
+        <Semantic_Degital_Library_system-ontology:Title xml:lang="en">psy course full video</Semantic_Degital_Library_system-ontology:Title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#membre02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#membre02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Membre"/>
+        <Semantic_Degital_Library_system-ontology:Enroll rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Course1"/>
+        <Semantic_Degital_Library_system-ontology:Enroll rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#course2"/>
+        <Semantic_Degital_Library_system-ontology:Participate rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#conf1"/>
+        <Semantic_Degital_Library_system-ontology:Subscribtion>yearly</Semantic_Degital_Library_system-ontology:Subscribtion>
+        <Semantic_Degital_Library_system-ontology:end_of_subscribtion xml:lang="en">2021</Semantic_Degital_Library_system-ontology:end_of_subscribtion>
+        <Semantic_Degital_Library_system-ontology:name>petter parker</Semantic_Degital_Library_system-ontology:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#visitor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#visitor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Person"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <owl:minCardinality rdf:datatype="nonNegativeInteger">1</owl:minCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minCardinality rdf:datatype="nonNegativeInteger">1</owl:minCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minCardinality rdf:datatype="nonNegativeInteger">1</owl:minCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minCardinality rdf:datatype="nonNegativeInteger">1</owl:minCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minCardinality rdf:datatype="nonNegativeInteger">1</owl:minCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minCardinality rdf:datatype="nonNegativeInteger">1</owl:minCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minCardinality rdf:datatype="nonNegativeInteger">1</owl:minCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minCardinality rdf:datatype="nonNegativeInteger">1</owl:minCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minCardinality rdf:datatype="nonNegativeInteger">1</owl:minCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minCardinality rdf:datatype="nonNegativeInteger">1</owl:minCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minCardinality rdf:datatype="nonNegativeInteger">1</owl:minCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minCardinality rdf:datatype="nonNegativeInteger">1</owl:minCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minCardinality rdf:datatype="nonNegativeInteger">1</owl:minCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minCardinality rdf:datatype="nonNegativeInteger">1</owl:minCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minCardinality rdf:datatype="nonNegativeInteger">1</owl:minCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minCardinality rdf:datatype="nonNegativeInteger">1</owl:minCardinality>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#chapter">
+        <rdfs:label xml:lang="en">chapter</rdfs:label>
+        <rdfs:comment xml:lang="en">An chapter number</rdfs:comment>
+        <rdfs:domain>
+		</rdfs:domain>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Book"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Conference"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#EBook"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Exhibitions"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Film"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#MOC"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Magazine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Manual"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#MultiVolumeBook"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Slide_Show"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Thesis"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#Website"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#WorkShop"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#YoutubeVideo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Semantic_Degital_Library_system-ontology#journal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/raouf/ontologies/2020/1/Webpage"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
