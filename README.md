@@ -1,7 +1,7 @@
 # Semantics-based database for library-ontology & Semantic queries-with-JENA
 in this project i created a linked data ontology using OWL for library system , and i made a java project using JENA framework for querying my ontology using Sparql query Language 
 
-[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) [![Gem Version](http://img.shields.io/gem/v/badgerbadgerbadger.svg?style=flat-square)](https://rubygems.org/gems/badgerbadgerbadger) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) ![GitHub repo size](https://img.shields.io/github/repo-size/raaaouf/whatsapp-chat-analysis-python?color=yellow&label=size&logo=size?style=flat-square) [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) ![Top Language ](https://img.shields.io/github/languages/top/raaaouf/whatsapp-chat-analysis-python?color=purple)
+[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) [![Gem Version](http://img.shields.io/gem/v/badgerbadgerbadger.svg?style=flat-square)](https://rubygems.org/gems/badgerbadgerbadger) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) ![GitHub repo size](https://img.shields.io/github/repo-size/raaaouf/Semantics-based-database-for-library-ontology-and-Semantic-queries-with-JENA?color=yellow&label=size&logo=size?style=flat-square) [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) ![Top Language ](https://img.shields.io/github/languages/top/raaaouf/Semantics-based-database-for-library-ontology-and-Semantic-queries-with-JENA?color=purple)
 
 ## Overview
 ### What does Semantic Data Model mean?
@@ -16,8 +16,9 @@ Linked data is a method for publishing structured data using vocabularies like s
 ### OWL
 
 The Web Ontology Language is a family of knowledge representation languages for authoring ontologies. Ontologies are a formal way to describe taxonomies and classification networks, essentially defining the structure of knowledge for various domains: the nouns representing classes of objects and the verbs representing relations between the objects.
+
 ### Graph Data
-![img2](library-ontology-6 (1).png)
+![a](library-ontology-6(1).png)
 
 
 ## Libraries Require
