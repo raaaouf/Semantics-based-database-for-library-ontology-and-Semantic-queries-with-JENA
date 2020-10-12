@@ -16,7 +16,8 @@ Linked data is a method for publishing structured data using vocabularies like s
 ### OWL
 
 The Web Ontology Language is a family of knowledge representation languages for authoring ontologies. Ontologies are a formal way to describe taxonomies and classification networks, essentially defining the structure of knowledge for various domains: the nouns representing classes of objects and the verbs representing relations between the objects.
-
+### Graph Data
+![img2](library-ontology-6 (1).png)
 
 
 ## Libraries Require
